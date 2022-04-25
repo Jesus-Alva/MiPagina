@@ -13,10 +13,10 @@ html{
     scroll-snap-type: y mandatory;
 }
 /** Scroll snap **/
-.servicios, .navegacion-principal, .formulario {
+/*.servicios, .navegacion-principal, .formulario {
     scroll-snap-align: center;
     scroll-snap-stop: always;
-}
+} */
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -115,12 +115,12 @@ h1,h2,h3{
     padding: 1rem;
 }
 .navegacion-principal a:hover {
-    background-color: var(--primario);
-    color: var(--oscuro);
+    background-color: rgb(71, 69, 69);
+    color: var(--blanco);
 }
 
 .hero {
-    background-image: url(../img/hero.jpg);
+    background-image: url(../img/559128.jpg);
     background-repeat: no-repeat; /*ña imagen no se repite cuando se agranda la pagina*/
     background-size: cover; /*Hace que la imagen ocupe todo el espacio*/
     height: 450px;
@@ -129,7 +129,7 @@ h1,h2,h3{
 }
 .contenido-hero {
     position: absolute;
-    background-color: rgba(0, 0, 0, .7);/*le da color y transparencia al fondo*/
+    background-color: rgba(0, 0, 0, .5);/*le da color y transparencia al fondo*/
     background-color: 0 0 0 / 70% ;
     width: 100%;
     height: 100%;

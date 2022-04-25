@@ -1,0 +1,116 @@
+:root{
+    --primario: #FFC107;
+    --secundario: #0097A7;
+}
+/* From uiverse.io by @gagan-gv */
+.card {
+    width: 200px;
+    height: 250px;
+    background: var(--secundario);
+    border-radius: 5px;
+    text-align: center;
+    color: #f0f0f0;
+    font-family: inherit;
+    z-index: 1;
+   }
+   
+   .img {
+    transform: scale(1.1);
+    background-image: url(../img/20201223_221427~2.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    margin: 60px auto 10px auto;
+    width: 85px;
+    height: 85px;
+    border: 1px solid #f0f0f0;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 99;
+   }
+   
+   .link-style {
+    opacity: 0;
+    transition: all 0.5s;
+   }
+   
+   h1 {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+   }
+   
+   svg {
+    padding: 0 5px;
+    cursor: pointer;
+   }
+   
+   .card:hover .img {
+    transform: scale(2.2);
+    border: 1px solid #f0f0f0;
+   }
+   
+   .card:hover h1,
+   .card:hover p {
+    opacity: 1;
+   }
+
+   /* boton contacar */
+   .boton-ani {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.7em 2.4em;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: var(--secundario);
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 500;
+   }
+   
+   .span-ani {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 4px solid var(--secundario);
+   }
+   
+   .span-ani::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: var(--lightgray);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+   }
+   
+   .boton-ani:hover .span-ani::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: var(--secundario);
+   }
+   
+   .boton-ani:hover {
+    color: white;
+   }
+   
+   .boton-ani:active .span-ani::before {
+    background: #2751cd;
+   }
