@@ -120,7 +120,7 @@ h1,h2,h3{
 }
 
 .hero {
-    background-image: url(../img/559128.jpg);
+    background-image: url(../img/lentes-codigo.jpg);
     background-repeat: no-repeat; /*ña imagen no se repite cuando se agranda la pagina*/
     background-size: cover; /*Hace que la imagen ocupe todo el espacio*/
     height: 450px;
@@ -149,7 +149,7 @@ h1,h2,h3{
 @media (min-width: 768px) {
     .servicios {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 1rem;
     }
 }
@@ -176,6 +176,7 @@ h1,h2,h3{
     justify-content: space-evenly;
     align-items: center;
 }
+
 .formulario {
     background-color: var(--gris);
     width: min( 60rem, 100%); /* utiliza el valor mas pequeño */ 
@@ -224,7 +225,50 @@ h1,h2,h3{
     padding: 1.5rem;
     border-radius: .5rem;
 }
-
+/** Portafolio **/
+.img-pagina{
+    background-image: url(../img/MiPágina.PNG);
+}
+.img-fontendstore{
+    background-image: url(../img/FrontedStore.PNG);
+}
+.img-portafolio{
+    transform: scale(1);
+    height: 15rem;
+    width: 15rem;
+    background-position: center;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all 0.5s;
+    z-index: 99;
+}
+.img-portafolio:hover {
+    height: 15rem;
+    width: 25rem;
+    border-radius: 0;
+    transform: scale(2);
+}
+@media (max-width: 768px) {
+    .img-portafolio:hover {
+        height: 10rem;
+        width: 15rem;
+        border-radius: 0;
+        transform: scale(2);
+    }
+}
+@media (max-width: 400px) {
+    .img-portafolio:hover {
+        height: 10rem;
+        width: 15rem;
+        border-radius: 0;
+        transform: scale(1.5);
+    }
+}
 /**Footer**/
 .footer {
     text-align: center;

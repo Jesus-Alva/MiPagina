@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diseñador Freelancer</title>
+        <link rel="preload" href="css/normalize.css" as="style">
+        <link href="css/normalize.css" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo:wght@700&display=swap" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo:wght@700&family=Exo+2:ital,wght@0,100;0,300;0,400;1,100&display=swap"
+            rel="stylesheet">
+    
+        <link rel="preload" href="css/style.css" as="style">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/animation.css" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <h1 class="titulo">Diseño y Desarrollo WEB</h1>
+
+    </header>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="informacion.html">Sobre Mi</a>
+            <a href="portafolio.html">Mi Portafolio</a>
+            <a href="contacto.html">Redes Sociales</a>
+        </nav>
+    </div>
+    <br>
+    <main class="contenedor sombra">
+        <h2>Mi Portafolio</h2>
+        <div class="servicios">
+            <section class="servicio">
+                <h3>Mi Página Personal</h3>
+                <div class="img-portafolio img-pagina">
+                </div>
+                <p>Desarrollo y Gestion de sistemas WEB usando distintos tipos de tecnologias.</p>
+            </section>
+            <section class="servicio">
+                <h3>Fronted Store</h3>
+                <div class="img-portafolio img-fontendstore">
+                </div>
+                <p>Desarrollo y Gestion de sistemas WEB usando distintos tipos de tecnologias.</p>
+            </section>
+            <section class="servicio">
+                <h3>E-Commerce</h3>
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#212121" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="3" y="5" width="18" height="14" rx="3" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                        <line x1="7" y1="15" x2="7.01" y2="15" />
+                        <line x1="11" y1="15" x2="13" y2="15" />
+                    </svg>
+                </div>
+                <p>Especialidad en el E-Commerce, para desarrollar tu propia tienda online</p>
+            </section>
+        </div>
+        <section>
+            <h2 id="contacto">Contacto</h2>
+            <form class="formulario" action="enviarCorreo.php" method="post">
+                <fieldset>
+                    <legend>Contactame llenando todos los campos</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" name="nombre" type="text" placeholder="Tu nombre">
+                        </div>
+
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" name="tel" type="tel" placeholder="Tu Teléfono">
+                        </div>
+
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" name="mail" type="email" placeholder="Mail">
+                        </div>
+
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text" name="mensaje"></textarea>
+                        </div>
+                    </div><!-- Contendor campos-->
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" name="" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Todos los derechos reservados. Jesus Alva</p>
+    </footer>
+</body>
+</html>
