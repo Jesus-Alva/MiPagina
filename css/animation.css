@@ -1,8 +1,9 @@
-:root{
+:root {
     --primario: #FFC107;
     --secundario: #0097A7;
     --blanco: #fff;
 }
+
 /* From uiverse.io by @gagan-gv */
 .card {
     width: 200px;
@@ -13,14 +14,13 @@
     color: #f0f0f0;
     font-family: inherit;
     z-index: 1;
-   }
-   
-   .img {
+}
+
+.img {
     transform: scale(1.1);
     background-image: url(../img/20201223_221427~2.jpg);
     background-position: center;
     background-repeat: none;
-    background-attachment: fixed;
     background-size: cover;
     display: flex;
     margin: 60px auto 10px auto;
@@ -33,36 +33,36 @@
     align-items: center;
     transition: all 0.5s;
     z-index: 99;
-   }
-   
-   .link-style {
+}
+
+.link-style {
     opacity: 0;
     transition: all 0.5s;
-   }
-   
-   h1 {
+}
+
+h1 {
     padding: 10px;
     font-weight: 500;
     font-size: 18px;
-   }
-   
-   svg {
+}
+
+svg {
     padding: 0 5px;
     cursor: pointer;
-   }
-   
-   .card:hover .img {
+}
+
+.card:hover .img {
     transform: scale(2.2);
     border: 1px solid #f0f0f0;
-   }
-   
-   .card:hover h1,
-   .card:hover p {
-    opacity: 1;
-   }
+}
 
-   /* boton contacar */
-    .btn-a {
+.card:hover h1,
+.card:hover p {
+    opacity: 1;
+}
+
+/* boton contacar */
+.btn-a {
     border: none;
     display: block;
     position: relative;
@@ -76,13 +76,14 @@
     z-index: 1;
     font-family: inherit;
     font-weight: 500;
-   }
-   
-   .btn-contacto {
+}
+
+.btn-contacto {
     color: var(--secundario);
     text-decoration: none;
-   }
-    .span-a {
+}
+
+.span-a {
     position: absolute;
     left: 0;
     top: 0;
@@ -91,9 +92,9 @@
     background: transparent;
     z-index: -1;
     border: 4px solid var(--secundario);
-   }
-   
-    .span-a::before {
+}
+
+.span-a::before {
     content: "";
     display: block;
     position: absolute;
@@ -104,24 +105,24 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(-60deg);
     transition: all 0.3s;
-   }
-   
-    .btn-a:hover .span-a::before{
+}
+
+.btn-a:hover .span-a::before {
     transform: translate(-50%, -50%) rotate(-90deg);
     width: 100%;
     background: var(--secundario);
-   }
-   
-    .btn-a:hover {
-    color: var(--blanco);
-   }
-   
-   .btn-a:active .span-a::before {
-    background: var(--blanco);
-   }
+}
 
-   /** SPINNER **/
-   /* From uiverse.io by @gagan-gv */
+.btn-a:hover {
+    color: var(--blanco);
+}
+
+.btn-a:active .span-a::before {
+    background: var(--blanco);
+}
+
+/** SPINNER **/
+/* From uiverse.io by @gagan-gv */
 .spinner {
     height: 50px;
     width: max-content;
@@ -134,52 +135,180 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   }
-   @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .spinner span {
         height: 50px;
         letter-spacing: 1px;
         font-size: 15px;
         font-weight: 100;
-        }
+    }
+}
+
+.spinner span {
+    animation: loading6454 2.40s ease infinite;
+}
+
+.spinner span:nth-child(2) {
+    animation-delay: 0.10s;
+}
+
+.spinner span:nth-child(3) {
+    animation-delay: 0.20s;
+}
+
+.spinner span:nth-child(4) {
+    animation-delay: 0.30s;
+}
+
+.spinner span:nth-child(5) {
+    animation-delay: 0.40s;
+}
+
+.spinner span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.spinner span:nth-child(7) {
+    animation-delay: 0.60s;
+}
+
+.spinner span:nth-child(8) {
+    animation-delay: 0.70s;
+}
+
+.spinner span:nth-child(9) {
+    animation-delay: 0.80s;
+}
+
+.spinner span:nth-child(10) {
+    animation-delay: 0.90s;
+}
+
+.spinner span:nth-child(11) {
+    animation-delay: 1s;
+}
+
+.spinner span:nth-child(12) {
+    animation-delay: 1.10s;
+}
+
+.spinner span:nth-child(13) {
+    animation-delay: 1.20s;
+}
+
+.spinner span:nth-child(14) {
+    animation-delay: 1.30s;
+}
+
+.spinner span:nth-child(15) {
+    animation-delay: 1.40s;
+}
+
+.spinner span:nth-child(16) {
+    animation-delay: 1.5s;
+}
+
+.spinner span:nth-child(17) {
+    animation-delay: 1.60s;
+}
+
+.spinner span:nth-child(18) {
+    animation-delay: 1.70s;
+}
+
+.spinner span:nth-child(19) {
+    animation-delay: 1.80s;
+}
+
+.spinner span:nth-child(20) {
+    animation-delay: 1.90s;
+}
+
+.spinner span:nth-child(21) {
+    animation-delay: 2s;
+}
+
+.spinner span:nth-child(22) {
+    animation-delay: 2.10s;
+}
+
+.spinner span:nth-child(23) {
+    animation-delay: 2.20s;
+}
+
+.spinner span:nth-child(24) {
+    animation-delay: 2.30s;
+}
+
+.spinner span:nth-child(25) {
+    animation-delay: 2.40s;
+}
+
+.spinner span:nth-child(26) {
+    animation-delay: 2.4s;
+}
+
+
+@keyframes loading6454 {
+
+    0%,
+    100% {
+        transform: translateY(0);
     }
 
-   .spinner span {
-    animation: loading6454 2.40s ease infinite;
-   }
-   .spinner span:nth-child(2) {animation-delay: 0.10s; }
-   .spinner span:nth-child(3) {animation-delay: 0.20s; }
-   .spinner span:nth-child(4) {animation-delay: 0.30s; }
-   .spinner span:nth-child(5) {animation-delay: 0.40s; }
-   .spinner span:nth-child(6) {animation-delay: 0.5s; }
-   .spinner span:nth-child(7) {animation-delay: 0.60s; }
-   .spinner span:nth-child(8) {animation-delay: 0.70s;     }
-   .spinner span:nth-child(9) {animation-delay: 0.80s;     }
-   .spinner span:nth-child(10) {animation-delay: 0.90s; }
-   .spinner span:nth-child(11) {animation-delay: 1s; }
-   .spinner span:nth-child(12) {animation-delay: 1.10s; }
-   .spinner span:nth-child(13) {animation-delay: 1.20s; }
-   .spinner span:nth-child(14) {animation-delay: 1.30s; }
-   .spinner span:nth-child(15) {animation-delay: 1.40s; }
-   .spinner span:nth-child(16) {animation-delay: 1.5s; }
-   .spinner span:nth-child(17) {animation-delay: 1.60s; }
-   .spinner span:nth-child(18) {animation-delay: 1.70s; }
-   .spinner span:nth-child(19) {animation-delay: 1.80s; }
-   .spinner span:nth-child(20) {animation-delay: 1.90s; }
-   .spinner span:nth-child(21) {animation-delay: 2s; }
-   .spinner span:nth-child(22) {animation-delay: 2.10s; }
-   .spinner span:nth-child(23) {animation-delay: 2.20s; }
-   .spinner span:nth-child(24) {animation-delay: 2.30s; }
-   .spinner span:nth-child(25) {animation-delay: 2.40s; }
-   .spinner span:nth-child(26) {animation-delay: 2.4s; }
-  
-   
-   @keyframes loading6454 {
-    0%, 100% {
-     transform: translateY(0);
-    }
-   
     50% {
-     transform: translateY(-40px);
+        transform: translateY(-40px);
     }
+}
+/** Animation-page information **/
+.card-information {
+    color: white;
+    display: grid;
+    gap: 5px;
+    overflow: visible;
    }
+   
+   .card-information .item {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .item:hover {
+    transform: scale(0.95);
+    transition: all 0.3s;
+   }
+   
+   .item svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 7px;
+   }
+   
+   .item--1 {
+    background: var(--secundario);
+   }
+   
+   .item--2 {
+    background: #ffd8be;
+   }
+   
+   .item--3 {
+    background: #a9ecbf;
+   }
+   
+   .item--4 {
+    background: #f3bbe1;
+   }
+   
+   .quantity {
+    font-size: 25px;
+    font-weight: 600;
+   }
+   
