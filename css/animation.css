@@ -38,6 +38,7 @@
 .link-style {
     opacity: 0;
     transition: all 0.5s;
+    padding: 0%;
 }
 
 h1 {
@@ -55,7 +56,10 @@ svg {
     transform: scale(2.2);
     border: 1px solid #f0f0f0;
 }
-
+.card-info:hover {
+    height: 300px;
+    transition: all .4s;
+}
 .card-info:hover h1,
 .card-info:hover p {
     opacity: 1;
