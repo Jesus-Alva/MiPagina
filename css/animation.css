@@ -5,7 +5,7 @@
 }
 
 /* From uiverse.io by @gagan-gv */
-.card {
+.card-info {
     width: 200px;
     height: 250px;
     background: var(--secundario);
@@ -51,13 +51,13 @@ svg {
     cursor: pointer;
 }
 
-.card:hover .img {
+.card-info:hover .img {
     transform: scale(2.2);
     border: 1px solid #f0f0f0;
 }
 
-.card:hover h1,
-.card:hover p {
+.card-info:hover h1,
+.card-info:hover p {
     opacity: 1;
 }
 
@@ -262,53 +262,5 @@ svg {
         transform: translateY(-40px);
     }
 }
+
 /** Animation-page information **/
-.card-information {
-    color: white;
-    display: grid;
-    gap: 5px;
-    overflow: visible;
-   }
-   
-   .card-information .item {
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   }
-   
-   .item:hover {
-    transform: scale(0.95);
-    transition: all 0.3s;
-   }
-   
-   .item svg {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 7px;
-   }
-   
-   .item--1 {
-    background: var(--secundario);
-   }
-   
-   .item--2 {
-    background: #ffd8be;
-   }
-   
-   .item--3 {
-    background: #a9ecbf;
-   }
-   
-   .item--4 {
-    background: #f3bbe1;
-   }
-   
-   .quantity {
-    font-size: 25px;
-    font-weight: 600;
-   }
-   

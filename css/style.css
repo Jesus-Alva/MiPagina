@@ -247,7 +247,6 @@ h1,h2,h3{
     width: 15rem;
     background-position: center;
     background-repeat: none;
-    background-attachment: fixed;
     background-size: cover;
     display: flex;
     border: 1px solid #000000;
@@ -278,6 +277,84 @@ h1,h2,h3{
         transform: scale(1.5);
     }
 }
+
+/** Formuario **/
+.contenedor-datos h2 {
+    color: #ffffff;
+}
+.contenedor-datos p{
+    font-size: 2rem;
+}
+.contenedor-datos {
+    background-color: #000000;
+    border-radius: 20px;
+    border: 3px solid #ffffff;
+}
+.datos-p{
+    text-align: center;
+    background-color: #0097A7;
+    padding: 3rem 3rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 3px solid #ffffff;
+}
+.tipo_dato{
+    text-align: center;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;
+    border-collapse: collapse;
+    padding: 0;
+    table-layout: fixed;
+}
+table tr {
+    border: 1px solid #ddd;
+}
+table tbody th, table tbody td {
+    padding: 8px;
+}
+@media screen and (max-width: 600px) {
+    table {
+        border: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tema {
+        display: none;
+    }
+    table tr {
+        margin-bottom: 8px;
+        border-bottom: 4px solid #ddd;
+        display: block;
+    }
+    table td, table th {
+        font-size: 12px;
+    }
+    table td {
+        display: block;
+        border-bottom: 1px solid #ddd;
+        text-align: ceter;
+    }
+    table td:last-child {
+        border-bottom: 0px;
+    }
+    table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        float: left;
+    }
+    table p {
+        font-size: 12px;
+    }
+    .datos-p {
+        padding-left: 0px;
+        padding-right: 0px;   
+    }
+}
+
 /**Footer**/
 .footer {
     text-align: center;
