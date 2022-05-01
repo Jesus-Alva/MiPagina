@@ -122,7 +122,6 @@ svg {
 }
 
 /** SPINNER **/
-/* From uiverse.io by @gagan-gv */
 .spinner {
     height: 50px;
     width: max-content;
@@ -263,4 +262,46 @@ svg {
     }
 }
 
-/** Animation-page information **/
+/** Page - Portafolio **/
+.img-pagina{
+    background-image: url(../img/MiPágina.PNG);
+}
+.img-fontendstore{
+    background-image: url(../img/FrontedStore.PNG);
+}
+.img-portafolio{
+    transform: scale(1);
+    height: 15rem;
+    width: 15rem;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all 0.5s;
+    z-index: 99;
+}
+.img-portafolio:hover {
+    height: 15rem;
+    width: 25rem;
+    border-radius: 0;
+    transform: scale(1.85);
+}
+@media (max-width: 768px) {
+    .img-portafolio:hover {
+        height: 10rem;
+        width: 15rem;
+        border-radius: 0;
+        transform: scale(2);
+    }
+}
+@media (max-width: 400px) {
+    .img-portafolio:hover {
+        height: 10rem;
+        width: 15rem;
+        border-radius: 0;
+        transform: scale(1.5);
+    }
+}
