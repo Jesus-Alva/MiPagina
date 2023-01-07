@@ -1,6 +1,6 @@
 :root {
     --primario: #FFC107;
-    --secundario: #0097A7;
+    --secundario: #000000;
     --blanco: #fff;
 }
 
@@ -31,7 +31,7 @@
     font-size: 11px;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s;
+    transition: all 0.2s;
     z-index: 99;
 }
 
@@ -60,9 +60,14 @@ svg {
     height: 300px;
     transition: all .4s;
 }
-.card-info:hover h1,
 .card-info:hover p {
     opacity: 1;
+}
+
+.card-info:hover .disappear
+{
+    opacity: 0;
+    transition: all .4s;
 }
 
 /* boton contacar */
@@ -273,8 +278,10 @@ svg {
 .img-fontendstore{
     background-image: url(../img/FrontedStore.PNG);
 }
+.img-knowing{
+    background-image: url(../img/Knowing/Perfil.PNG);
+}
 .img-portafolio{
-    transform: scale(1);
     height: 15rem;
     width: 15rem;
     background-position: center;
@@ -291,14 +298,14 @@ svg {
     height: 15rem;
     width: 25rem;
     border-radius: 0;
-    transform: scale(1.85);
+    transform: scale(1.4);
 }
 @media (max-width: 768px) {
     .img-portafolio:hover {
         height: 10rem;
         width: 15rem;
         border-radius: 0;
-        transform: scale(2);
+        transform: scale(1.2);
     }
 }
 @media (max-width: 400px) {
