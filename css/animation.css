@@ -301,14 +301,12 @@ svg {
     height: 15rem;
     width: 25rem;
     border-radius: 0;
-    transform: scale(1.4);
 }
 @media (max-width: 768px) {
     .img-portafolio:hover {
         height: 10rem;
         width: 15rem;
         border-radius: 0;
-        transform: scale(1.2);
     }
 }
 @media (max-width: 400px) {
@@ -316,7 +314,6 @@ svg {
         height: 10rem;
         width: 15rem;
         border-radius: 0;
-        transform: scale(1.5);
     }
 }
 /** Boton repositorio **/
